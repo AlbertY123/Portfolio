@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade In on Scroll</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <h1>byweid</h1>
+    <div class="container">
+        <div class="fade-in">Text 1</div>
+        <div class="fade-in">Text 2</div>
+        <div class="fade-in">Text 3</div>
+    </div>
+    <script>
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        function fadeInOnScroll() {
+            fadeElements.forEach((element) => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (elementTop < windowHeight) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        window.addEventListener('scroll', fadeInOnScroll);
+
+        // Initially, check for elements in view on page load
+        fadeInOnScroll();
+    </script>
+</body>
+</html>
