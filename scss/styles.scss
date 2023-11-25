@@ -1,7 +1,7 @@
 /* Define the style for the yellow circle */
 .circle {
-  width: 30px;
-  height: 30px;
+  width: 10px;
+  height: 10px;
   background-color: yellow;
   border-radius: 50%;
   position: fixed;
@@ -12,8 +12,8 @@
 /* Define the style for the outer changing circle */
 /* Define the style for the outer changing circle */
 .outer-circle {
-  width: 150px; /* Set the width to 150px */
-  height: 150px; /* Set the height to 150px */
+  width: 50px; /* Set the width to 150px */
+  height: 50px; /* Set the height to 150px */
   border-radius: 50%;
   position: fixed;
   animation: colorChange 5s linear infinite;

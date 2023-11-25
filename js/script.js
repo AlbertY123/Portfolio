@@ -16,8 +16,8 @@ let menuOpen = false;
   // Add an event listener to track the cursor's movement
   document.addEventListener("mousemove", (e) => {
     // Update the position of the inner circle to follow the cursor
-    follower.style.left = (e.clientX - 15) + "px";
-    follower.style.top = (e.clientY - 15) + "px";
+    follower.style.left = (e.clientX - 7.5) + "px";
+    follower.style.top = (e.clientY - 7.5) + "px";
   });
 function animateOuterCircle() {
     // Get the position and size of the inner circle
@@ -32,7 +32,7 @@ function animateOuterCircle() {
     const desiredY = innerCircleCenterY - changingCircle.offsetHeight / 2;
 
     // Smoothly update the position of the outer circle
-    const ease = 0.2; // Adjust the ease for faster/slower follow
+    const ease = 0.25; // Adjust the ease for faster/slower follow
     changingCircle.style.left = changingCircle.offsetLeft + (desiredX - changingCircle.offsetLeft) * ease + "px";
     changingCircle.style.top = changingCircle.offsetTop + (desiredY - changingCircle.offsetTop) * ease + "px";
 
