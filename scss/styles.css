@@ -73,7 +73,7 @@ h1 {
 .menu {
   position: absolute;
   z-index: 10;
-  padding: 25% clamp(2rem, 8vw, 7rem) 0;
+  padding: 35% clamp(2rem, 8vw, 7rem) 0;
   margin: 0px;
 }
 .menu:before {
@@ -144,3 +144,11 @@ nav ul li a:hover:before {
   transform-origin: top;
   pointer-events: none;
 }/*# sourceMappingURL=styles.css.map */
+@media only screen and (max-width: 760px) {
+  .menu {
+    position: absolute;
+    z-index: 10;
+    padding: 15% clamp(2rem, 8vw, 7rem) 0;
+    margin: 0px;
+  }
+}
